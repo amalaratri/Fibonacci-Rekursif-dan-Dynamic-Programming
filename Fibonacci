@@ -27,7 +27,6 @@ int main() {
     std::cout << "Mengukur waktu eksekusi fungsi Fibonacci:\n";
     
     for (int n : testValues) {
-        // Mengukur waktu eksekusi untuk fungsi rekursif
         auto startRekursif = std::chrono::high_resolution_clock::now();
         int resultRekursif = fibonacciRekursif(n);
         auto endRekursif = std::chrono::high_resolution_clock::now();
